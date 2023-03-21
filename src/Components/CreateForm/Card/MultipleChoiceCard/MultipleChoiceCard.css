@@ -1,0 +1,14 @@
+.newSnackbar {
+  padding-top: 0;
+  text-align: center;
+}
+
+.cardNewBtn {
+  /* height: 10px; */
+  position: relative;
+  top: 5px;
+}
+
+.btn-drag {
+  /* border: 1px solid red; */
+}

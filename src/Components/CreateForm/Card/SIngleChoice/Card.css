@@ -1,0 +1,63 @@
+/* .SnackBarElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+} */
+
+.SnackBar {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 16px;
+  gap: 46px;
+
+  width: 333px;
+  height: 48px;
+
+  /* Color/Text/c100(Line Divider) */
+
+  border: 1px solid #e2e7ef;
+  border-radius: 4px;
+  background-color: white;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  margin-left: 16px;
+
+  margin-top: 70px;
+
+  color: blue;
+}
+
+.newSnackbar {
+  margin-top: 15px;
+}
+
+.btn-drag {
+  background-color: white;
+  padding: 11px 40px;
+  border: none;
+  color: blue;
+  border-radius: 10px;
+}
+
+.btn-drag:hover {
+  color: rgb(77, 77, 250);
+  cursor: grabbing;
+}
+
+.btn-drag:active {
+  background-color: #daddfb;
+  color: #1d39c4;
+}

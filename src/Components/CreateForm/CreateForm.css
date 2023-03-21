@@ -1,0 +1,287 @@
+* {
+  background-color: #f2f4f8;
+}
+
+.TopNavigation {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 15px;
+
+  position: absolute;
+  width: 1440px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+
+  /* Color/Light/c50 */
+
+  background: #ffffff;
+  /* Color/Fonts/4.400(Line Divider) */
+
+  border-bottom: 1px solid #e2e7ef;
+}
+
+.Heading {
+  position: absolute;
+  left: 4.31%;
+  right: 4.31%;
+  top: 33.61%;
+  bottom: 33.61%;
+
+  font-weight: bolder;
+
+  color: #131ca2;
+
+  /* Color/Secondary-Sea Blue/2.200(Main) */
+
+  background: #fff;
+}
+
+.User {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  left: calc(50% - 12px / 2);
+  top: calc(50% - 8px / 2);
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 8px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 0.6px;
+
+  /* Color/Light/c50 */
+
+  color: #ffffff;
+}
+
+.Navigate {
+  width: 44px;
+  height: 16px;
+
+  /* Caption/Regular */
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  /* Color/Primary/main */
+
+  color: #131ca2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.SideNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 55px;
+  left: 0px;
+  top: 60px;
+  bottom: 0px;
+
+  right: 16px;
+
+  /* margin-right: 1106px; */
+  height: 964px;
+
+  /* Color/Light/c50 */
+
+  /* background: #e72525; */
+  background: #ffffff;
+}
+
+.NavOption {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: 17px;
+  height: 17px;
+
+  /* Color/Background/default */
+
+  background: #f2f4f8;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.ElementsHeading {
+  /* Title */
+
+  position: absolute;
+  width: 217px;
+  height: 20px;
+  left: 16px;
+  top: 14px;
+
+  /* Body 2/Bold */
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Forms/Selected */
+  background-color: white;
+
+  color: #000000;
+  font-weight: bolder;
+}
+
+.Elements {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+
+  position: absolute;
+  width: 365px;
+  height: 512px;
+  left: 96px;
+  top: 126px;
+
+  /* Color/Light/c50 */
+
+  /* background: #f38a8a; */
+  background: white;
+  border-radius: 4px;
+}
+
+.DraggableArea {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 16px 0px;
+  gap: 16px;
+
+  position: absolute;
+  /* width: 947px; */
+  width: 914px;
+  height: 896px;
+  left: 477px;
+  top: 112px;
+
+  /* background: #15a815; */
+  background: #ffffff;
+
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.line {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  /* margin-top: 48px; */
+  top: 7%;
+  bottom: 93%;
+
+  /* Color/Light/main */
+
+  border: 1px solid #f2f4f8;
+}
+
+.FormTitle {
+  display: flex;
+  background-color: white;
+}
+
+.input {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  padding: 0px 12px;
+  gap: 10px;
+
+  width: 449.5px;
+  height: 40px;
+
+  /* Color/White/main */
+
+  background: #ffffff;
+  /* Color/Text/c100(Line Divider) */
+
+  border: 1px solid #e2e7ef;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  margin-right: 10px;
+}
+
+.input-field.has-value + .input-placeholder,
+.input-field:focus-within + .input-placeholder {
+  display: none;
+}
+
+.input-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #848b96;
+  background-color: white;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+.DroppableArea {
+  width: 100%;
+  border: 1px dashed gray;
+  height: 10%;
+}
+
+.DropHere {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.listStyle {
+  list-style: none;
+}
